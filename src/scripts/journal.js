@@ -1,33 +1,14 @@
-const journalArray = [
-  {
-    journalDate: "2020-1-17",
-    concepts: "Javascript objects and functions",
-    journalText:
-      "Today we learned about Javascript functions and objects, how to use them togther as well as how to apply them to our sites.",
-    mood: "fine"
-  },
+const getJournalEntries = () => {
+  const journalUrl = "http://localhost:3000/entries";
+  fetch(journalUrl)
+  .then(resp => resp.json())
+  .then(entriesFromAPI => {
+    renderJournalEntries(entriesFromAPI);
 
-  {
-    journalDate: "2020-1-10",
-    concepts: "HTML",
-    journalText: "Today we learned HTML and how to implement it into a website",
-    mood: "happy"
-  },
+  });
+  
+}
 
-  {
-    journalDate: "2020-1-10",
-    concepts: "HTML",
-    journalText: "Today we learned HTML and how to implement it into a website",
-    mood: "happy"
-  },
-
-  {
-    journalDate: "2020-1-11",
-    concepts: "CSS",
-    journalText: "Today we learned CSS and how to use it to style a web page.",
-    mood: "sad"
-  }
-];
 
 /*
     Purpose: To create, and return, a string template that
@@ -61,8 +42,10 @@ const renderJournalEntries = entries => {
     entryContainer.innerHTML += makeJournalEntryComponent(entries[i]);
   }
 };
+
+getJournalEntries()
 // Invoke the render function
-renderJournalEntries(journalArray);
+// renderJournalEntries(entriesFromAPI);
 
 // journalArray.push(journalEntry);
 
