@@ -1,0 +1,30 @@
+journalArray = [
+    {
+      "journalDate": "2020-1-17",
+      "concepts": "Javascript objects and functions",
+      "journalText":
+        "Today we learned about Javascript functions and objects, how to use them togther as well as how to apply them to our sites.",
+      "mood": "fine"
+    },
+  
+    {
+      "journalDate": "2020-1-10",
+      "concepts": "HTML",
+      "journalText": "Today we learned HTML and how to implement it into a website",
+      "mood": "happy"
+    },
+  
+    {
+      "journalDate": "2020-1-10",
+      "concepts": "HTML",
+      "journalText": "Today we learned HTML and how to implement it into a website",
+      "mood": "happy"
+    },
+  
+    {
+      "journalDate": "2020-1-11",
+      "concepts": "CSS",
+      "journalText": "Today we learned CSS and how to use it to style a web page.",
+      "mood": "sad"
+    }
+  ];
