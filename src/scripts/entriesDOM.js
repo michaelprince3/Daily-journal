@@ -1,3 +1,5 @@
+import HTMLMaker from './entryComponent.js'
+
 const entryMaker = {
  renderJournalEntries (entries) {
     for (let i = 0; i < entries.length; i++) {
@@ -7,3 +9,5 @@ const entryMaker = {
     }
   }
 }
+
+export default entryMaker
