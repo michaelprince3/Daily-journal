@@ -2,8 +2,11 @@ import HTMLMaker from './entryComponent.js'
 
 const entryMaker = {
  renderJournalEntries (entries) {
+  const entryContainer = document.querySelector(".entryLog");
+  entryContainer.innerHTML = ""
     for (let i = 0; i < entries.length; i++) {
-      const entryContainer = document.querySelector(".entryLog");
+      
+      
       console.log(entryContainer);
       entryContainer.innerHTML += HTMLMaker.makeJournalEntryComponent(entries[i]);
     }

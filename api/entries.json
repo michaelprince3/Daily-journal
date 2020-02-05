@@ -1,30 +1,104 @@
-journalArray = [
+{
+  "entries": [
     {
       "journalDate": "2020-1-17",
       "concepts": "Javascript objects and functions",
-      "journalText":
-        "Today we learned about Javascript functions and objects, how to use them togther as well as how to apply them to our sites.",
-      "mood": "fine"
+      "journalText": "Today we learned about Javascript functions and objects, how to use them togther as well as how to apply them to our sites.",
+      "mood": "fine",
+      "id": 1
     },
-  
     {
       "journalDate": "2020-1-10",
       "concepts": "HTML",
       "journalText": "Today we learned HTML and how to implement it into a website",
-      "mood": "happy"
+      "mood": "happy",
+      "id": 2
     },
-  
     {
       "journalDate": "2020-1-10",
       "concepts": "HTML",
       "journalText": "Today we learned HTML and how to implement it into a website",
-      "mood": "happy"
+      "mood": "happy",
+      "id": 3
     },
-  
     {
       "journalDate": "2020-1-11",
       "concepts": "CSS",
       "journalText": "Today we learned CSS and how to use it to style a web page.",
-      "mood": "sad"
+      "mood": "sad",
+      "id": 4
+    },
+    {
+      "journalDate": "2020-02-12",
+      "concepts": "test",
+      "journalEntry": "words",
+      "mood": "fine",
+      "id": 5
+    },
+    {
+      "journalDate": "2020-02-12",
+      "concepts": "test",
+      "journalEntry": "",
+      "mood": "fine",
+      "id": 6
+    },
+    {
+      "journalDate": "2020-02-20",
+      "concepts": "More Test",
+      "journalText": "Are these words real?",
+      "mood": "happy",
+      "id": 7
+    },
+    {
+      "journalDate": "2020-02-20",
+      "concepts": "More Test",
+      "journalText": "Are these words real?",
+      "mood": "happy",
+      "id": 8
+    },
+    {
+      "journalDate": "2020-02-13",
+      "concepts": "does it work yet?",
+      "journalText": "",
+      "mood": "sad",
+      "id": 9
+    },
+    {
+      "journalDate": "2020-02-18",
+      "concepts": "Work!!!!!!!!!!",
+      "journalText": "words",
+      "mood": "happy",
+      "id": 10
+    },
+    {
+      "journalDate": "2020-02-18",
+      "concepts": "Work!!!!!!!!!!",
+      "journalText": "more words",
+      "mood": "happy",
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "journalDate": "2020-02-19",
+      "concepts": "some",
+      "journalText": "words",
+      "mood": "sad",
+      "id": 15
+    },
+    {
+      "journalDate": "2020-02-13",
+      "concepts": "ojovn",
+      "journalText": "oiervn",
+      "mood": "happy",
+      "id": 16
     }
-  ];
+  ]
+}
