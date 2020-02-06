@@ -11,11 +11,14 @@ const API = {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(entry),
-        
-          
-
-        }) 
-    }
+        })
+    },
+// part of journal 9
+    // deleteJournalEntry (entryId) {
+    //     return fetch(`http://localhost:3000/entries/${entryId}`, {
+    //         method: "DELETE"
+    //     })
+    // }    
 }
 
 export default API

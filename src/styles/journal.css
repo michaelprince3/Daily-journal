@@ -1,4 +1,32 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+input {
+  background-color: darkgray;
+}
+
+textarea {
+  background-color: darkgray;
+}
+
 fieldset {
   display: flex;
   flex-direction: column;
+  background-color: black;
+  color: azure;
+  border: 5px outset purple;
+  border-radius: 20px;
+}
+
+.moodRadio {
+  flex-direction: row;
+}
+
+.radioBtn {
+  display: inline;
+  width: 30%;
+  border: 1px solid red;
+  margin: 0;
 }
