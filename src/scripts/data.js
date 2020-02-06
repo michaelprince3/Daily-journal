@@ -13,12 +13,12 @@ const API = {
         body: JSON.stringify(entry),
         })
     },
-// part of journal 9
-    // deleteJournalEntry (entryId) {
-    //     return fetch(`http://localhost:3000/entries/${entryId}`, {
-    //         method: "DELETE"
-    //     })
-    // }    
+
+    deleteJournalEntry (entryId) {
+        return fetch(`http://localhost:3000/entries/${entryId}`, {
+            method: "DELETE"
+        })
+    }    
 }
 
 export default API

@@ -56,13 +56,13 @@ radioButtons.forEach(radioButton =>
     });
   })
 );
-// part of journal 9
-// const listenToEntries = document.querySelector(".entryLog")
 
-// listenToEntries.addEventListener("click", () => {
-// const deleteButtonId = event.target.id
-// API.deleteJournalEntry(deleteButtonId)
-// .then(() => API.getJournalEntries()
-// .then(entryMaker.renderJournalEntries))
+const listenToEntries = document.querySelector(".entryLog")
 
-// })
+listenToEntries.addEventListener("click", () => {
+const deleteButtonId = event.target.id
+API.deleteJournalEntry(deleteButtonId)
+.then(() => API.getJournalEntries()
+.then(entryMaker.renderJournalEntries))
+
+})
