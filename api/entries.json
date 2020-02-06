@@ -76,29 +76,6 @@
       "journalText": "more words",
       "mood": "happy",
       "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "journalDate": "2020-02-19",
-      "concepts": "some",
-      "journalText": "words",
-      "mood": "sad",
-      "id": 15
-    },
-    {
-      "journalDate": "2020-02-13",
-      "concepts": "ojovn",
-      "journalText": "oiervn",
-      "mood": "happy",
-      "id": 16
     }
   ]
 }
