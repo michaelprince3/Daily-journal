@@ -10,7 +10,8 @@
 
   <body>
     <h1>Daily Journal</h1>
-    <form action=""></form>
+    <form action="" id="journalForm">
+    <input type="hidden" id="journalId" />
     <fieldset>
       <label for="journalDate">Date of Entry</label>
       <input type="date" name="journalDate" id="journalDate" />
@@ -37,27 +38,46 @@
         <option value="sad">Sad</option>
       </select>
     </fieldset>
-    <input type="button" class="button" id="button" value="Record Journal Entry" />
+    <input
+      type="button"
+      class="button"
+      id="button"
+      value="Record Journal Entry"
+    />
+  </form>
     <fieldset class="moodRadio">
       <legend>Filter Entries By Mood</legend>
+      <div class="radioBtn" id="allRadio">
+        <label for="allSelect">
+          <input
+            type="radio"
+            name="radioButton"
+            id="allSelect"
+            value="all"
+          />All Entries
+        </label>
+      </div>
       <div class="radioBtn" id="happyRadio">
         <label for="happySelect">
-          <input type="radio" name="radioButton" id="happySelect" value="happy">Happy
+          <input
+            type="radio"
+            name="radioButton"
+            id="happySelect"
+            value="happy"
+          />Happy
         </label>
       </div>
       <div class="radioBtn" id="fineRadio">
-        <input type="radio" name="radioButton" id="fineSelect" value="fine">
+        <input type="radio" name="radioButton" id="fineSelect" value="fine" />
         <label for="fineSelect">Fine</label>
       </div>
       <div class="radioBtn" id="sadRadio">
-        <input type="radio" name="radioButton" id="sadSelect" value="sad">
+        <input type="radio" name="radioButton" id="sadSelect" value="sad" />
         <label for="sadSelect">Sad</label>
       </div>
     </fieldset>
-    <article class="entryLog">
-      
-    </article>
-   
+    <article class="entryLog"></article>
+
     <script type="module" src="scripts/journal.js"></script>
   </body>
 </html>

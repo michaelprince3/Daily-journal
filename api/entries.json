@@ -1,28 +1,21 @@
 {
   "entries": [
     {
-      "journalDate": "2020-1-17",
+      "journalDate": "2020-01-17",
       "concepts": "Javascript objects and functions",
       "journalText": "Today we learned about Javascript functions and objects, how to use them togther as well as how to apply them to our sites.",
       "mood": "fine",
       "id": 1
     },
     {
-      "journalDate": "2020-1-10",
-      "concepts": "HTML",
-      "journalText": "Today we learned HTML and how to implement it into a website",
-      "mood": "happy",
-      "id": 2
-    },
-    {
-      "journalDate": "2020-1-10",
+      "journalDate": "2020-01-10",
       "concepts": "HTML",
       "journalText": "Today we learned HTML and how to implement it into a website",
       "mood": "happy",
       "id": 3
     },
     {
-      "journalDate": "2020-1-11",
+      "journalDate": "2020-01-11",
       "concepts": "CSS",
       "journalText": "Today we learned CSS and how to use it to style a web page.",
       "mood": "sad",
@@ -30,17 +23,10 @@
     },
     {
       "journalDate": "2020-02-12",
-      "concepts": "test",
-      "journalEntry": "words",
+      "concepts": "A new test",
+      "journalText": "redefined",
       "mood": "fine",
       "id": 5
-    },
-    {
-      "journalDate": "2020-02-12",
-      "concepts": "test",
-      "journalEntry": "",
-      "mood": "fine",
-      "id": 6
     },
     {
       "journalDate": "2020-02-20",
@@ -50,32 +36,18 @@
       "id": 7
     },
     {
-      "journalDate": "2020-02-20",
-      "concepts": "More Test",
-      "journalText": "Are these words real?",
-      "mood": "happy",
-      "id": 8
-    },
-    {
-      "journalDate": "2020-02-13",
-      "concepts": "does it work yet?",
-      "journalText": "",
-      "mood": "sad",
+      "journalDate": "2020-01-17",
+      "concepts": "Javascript objects and functions",
+      "journalText": "Today we learned about Javascript functions and objects, how to use them togther as well as how to apply them to our sites.",
+      "mood": "fine",
       "id": 9
     },
     {
-      "journalDate": "2020-02-18",
-      "concepts": "Work!!!!!!!!!!",
-      "journalText": "words",
+      "journalDate": "2020-02-07",
+      "concepts": "Get, Post, Delete, Put",
+      "journalText": "I actually got all of the functions to work the way they are supposed to.",
       "mood": "happy",
       "id": 10
-    },
-    {
-      "journalDate": "2020-02-18",
-      "concepts": "Work!!!!!!!!!!",
-      "journalText": "more words",
-      "mood": "happy",
-      "id": 11
     }
   ]
 }
