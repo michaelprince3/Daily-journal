@@ -16,8 +16,9 @@ fieldset {
   flex-direction: column;
   background-color: black;
   color: azure;
-  border: 5px outset purple;
+  border: 5px outset greenyellow;
   border-radius: 20px;
+  margin: 5%;
 }
 
 .moodRadio {
