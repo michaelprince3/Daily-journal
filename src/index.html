@@ -11,71 +11,78 @@
   <body>
     <h1>Daily Journal</h1>
     <form action="" id="journalForm">
-    <input type="hidden" id="journalId" />
-    <fieldset>
-      <label for="journalDate">Date of Entry</label>
-      <input type="date" name="journalDate" id="journalDate" />
-    </fieldset>
-    <fieldset>
-      <label for="concepts">Concepts covered</label>
-      <input type="text" name="concepts" id="concepts" />
-    </fieldset>
-    <fieldset>
-      <label for="journalEntry">Journal Entry</label>
-      <textarea
-        name="journalEntry"
-        id="journalEntry"
-        cols="30"
-        rows="10"
-      ></textarea>
-    </fieldset>
-    <fieldset>
-      <label for="mood">Mood for the day</label>
-      <select name="mood" id="mood">
-        <option value="select">Choose a mood</option>
-        <option value="happy">Happy</option>
-        <option value="fine">Fine</option>
-        <option value="sad">Sad</option>
-      </select>
-    </fieldset>
-    <input
-      type="button"
-      class="button"
-      id="button"
-      value="Record Journal Entry"
-    />
-  </form>
-    <fieldset class="moodRadio">
-      <legend>Filter Entries By Mood</legend>
-      <div class="radioBtn" id="allRadio">
-        <label for="allSelect">
-          <input
-            type="radio"
-            name="radioButton"
-            id="allSelect"
-            value="all"
-          />All Entries
-        </label>
-      </div>
-      <div class="radioBtn" id="happyRadio">
-        <label for="happySelect">
-          <input
-            type="radio"
-            name="radioButton"
-            id="happySelect"
-            value="happy"
-          />Happy
-        </label>
-      </div>
-      <div class="radioBtn" id="fineRadio">
-        <input type="radio" name="radioButton" id="fineSelect" value="fine" />
-        <label for="fineSelect">Fine</label>
-      </div>
-      <div class="radioBtn" id="sadRadio">
-        <input type="radio" name="radioButton" id="sadSelect" value="sad" />
-        <label for="sadSelect">Sad</label>
-      </div>
-    </fieldset>
+      <input type="hidden" id="journalId" />
+      <fieldset>
+        <label for="journalDate">Date of Entry</label>
+        <input type="date" name="journalDate" id="journalDate" />
+      </fieldset>
+      <fieldset>
+        <label for="concepts">Concepts covered</label>
+        <input type="text" name="concepts" id="concepts" />
+      </fieldset>
+      <fieldset>
+        <label for="journalEntry">Journal Entry</label>
+        <textarea
+          name="journalEntry"
+          id="journalEntry"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <label for="mood">Mood for the day</label>
+        <select name="mood" id="mood">
+          <option value="select">Choose a mood</option>
+          <option value="happy">Happy</option>
+          <option value="fine">Fine</option>
+          <option value="sad">Sad</option>
+        </select>
+      </fieldset>
+      <button class="button" id="buttonId">Submit</button>
+      <input
+        type="button"
+        class="button"
+        id="buttonId"
+        value="Record Journal Entry"
+      />
+    </form>
+    <article class="lowerBar">
+      <fieldset class="moodRadio">
+        <legend>Filter Entries By Mood</legend>
+        <div class="radioBtn" id="allRadio">
+          <label for="allSelect">
+            <input
+              type="radio"
+              name="radioButton"
+              id="allSelect"
+              value="all"
+            />All Entries
+          </label>
+        </div>
+        <div class="radioBtn" id="happyRadio">
+          <label for="happySelect">
+            <input
+              type="radio"
+              name="radioButton"
+              id="happySelect"
+              value="happy"
+            />Happy
+          </label>
+        </div>
+        <div class="radioBtn" id="fineRadio">
+          <input type="radio" name="radioButton" id="fineSelect" value="fine" />
+          <label for="fineSelect">Fine</label>
+        </div>
+        <div class="radioBtn" id="sadRadio">
+          <input type="radio" name="radioButton" id="sadSelect" value="sad" />
+          <label for="sadSelect">Sad</label>
+        </div>
+      </fieldset>
+      <fieldset class="search">
+        <legend>Search for entries</legend>
+        <input type="text" class="searchBar" placeholder="Search" />
+      </fieldset>
+    </article>
     <article class="entryLog"></article>
 
     <script type="module" src="scripts/journal.js"></script>

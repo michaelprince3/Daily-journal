@@ -1,5 +1,5 @@
 const HTMLMaker = {
-     makeJournalEntryComponent (journalEntry) {
+  makeJournalEntryComponent(journalEntry) {
     return `
       <section class="journalEntry">
           <h2>${journalEntry.concepts}</h2>
@@ -10,6 +10,6 @@ const HTMLMaker = {
       </section>  
     `;
   }
-}
+};
 
-export default HTMLMaker
+export default HTMLMaker;
