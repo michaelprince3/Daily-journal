@@ -1,13 +1,12 @@
 import API from "./data.js";
 import entryMaker from "./entriesDOM.js";
 
-
 const modifyJournalEvents = {
   addEntry() {
-    const recButton = document.getElementById("button");
+    const recButton = document.getElementById("buttonId");
 
     recButton.addEventListener("click", () => {
-      const hiddenJournalId = document.querySelector("#journalId")
+      const hiddenJournalId = document.querySelector("#journalId");
       const entryDate = document.querySelector("#journalDate");
       const entryConcepts = document.querySelector("#concepts");
       const entryText = document.querySelector("#journalEntry");
@@ -21,12 +20,12 @@ const modifyJournalEvents = {
       };
 
       const clearForm = () => {
-          hiddenJournalId.value = ""
-          entryDate.value = ""
-          entryConcepts.value = ""
-          entryText.value = ""
-          entryMood.value = ""
-      }
+        hiddenJournalId.value = "";
+        entryDate.value = "";
+        entryConcepts.value = "";
+        entryText.value = "";
+        entryMood.value = "";
+      };
 
       const entryArray = [entryDate, entryConcepts, entryText, entryMood];
       const newArray = [];
@@ -41,18 +40,17 @@ const modifyJournalEvents = {
       });
 
       if (newArray.length === 4 && hiddenJournalId.value !== "") {
-          newJournalEntry.id = parseInt(hiddenJournalId.value)
-          API.editJournalEntry(newJournalEntry)
-          .then(() => 
-          API.getJournalEntries()
-          .then(entryMaker.renderJournalEntries))
-          .then(clearForm)
+        newJournalEntry.id = parseInt(hiddenJournalId.value);
+        API.editJournalEntry(newJournalEntry)
+          .then(() =>
+            API.getJournalEntries().then(entryMaker.renderJournalEntries)
+          )
+          .then(clearForm);
       } else if (newArray.length === 4) {
-        API.saveJournalEntry(newJournalEntry)
-        .then(() =>
+        API.saveJournalEntry(newJournalEntry).then(() =>
           API.getJournalEntries()
-          .then(entryMaker.renderJournalEntries)
-          .then(clearForm)
+            .then(entryMaker.renderJournalEntries)
+            .then(clearForm)
         );
       }
       // another way to make this work still evaluating which i like better
@@ -66,7 +64,7 @@ const modifyJournalEvents = {
     });
   },
 
-//   sort function for sorting by mood
+  //   sort function for sorting by mood
   sortEntries() {
     const radioButtons = document.getElementsByName("radioButton");
 
@@ -87,7 +85,7 @@ const modifyJournalEvents = {
     );
   },
 
-//   Edit function to edit an existing entry
+  //   Edit function to edit an existing entry
   changeEntries() {
     const listenToEntries = document.querySelector(".entryLog");
 
@@ -105,8 +103,8 @@ const modifyJournalEvents = {
         const editId = editArray[1];
         entryMaker.updateJournalEntries(editId);
       }
-    })
+    });
   }
-}
+};
 
 export default modifyJournalEvents;

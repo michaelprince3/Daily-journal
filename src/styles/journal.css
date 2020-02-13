@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  color: white;
+  color: azure;
 }
 
 input {
@@ -12,22 +12,61 @@ textarea {
 }
 
 fieldset {
-  display: flex;
-  flex-direction: column;
   background-color: black;
   color: azure;
-  border: 5px outset greenyellow;
+  border: 1px solid greenyellow;
   border-radius: 20px;
-  margin: 5%;
+  margin: 3%;
+  box-sizing: border-box;
+
+  border: 3px solid #0cd808;
+  box-shadow: 0 0 1px #b3ff51, 0 0 2px #b3ff51, 0 0 6px #b3ff51,
+    0 0 12px #b3ff51, inset 0 0 1px #b3ff51, inset 0 0 2px #b3ff51,
+    inset 0 0 6px #b3ff51, inset 0 0 12px #b3ff51;
+}
+
+.lowerBar {
+  display: flex;
+  justify-content: center;
 }
 
 .moodRadio {
-  flex-direction: row;
+  width: 40%;
+  height: 70px;
+}
+
+.search {
+  width: 40%;
+  height: 70px;
+}
+
+.searchBar {
+  align-self: center;
 }
 
 .radioBtn {
   display: inline;
-  width: 30%;
-  border: 1px solid red;
+  /* width: 30%; */
+  /* border: 1px solid red; */
   margin: 0;
+}
+
+#buttonId {
+  background-color: black;
+  color: yellowgreen;
+  border: solid 1px yellowgreen;
+  height: 5%;
+  width: 20%;
+  margin: 3%;
+  box-sizing: border-box;
+
+  border: 3px solid #0cd808;
+  box-shadow: 0 0 1px #b3ff51, 0 0 2px #b3ff51, 0 0 6px #b3ff51,
+    0 0 12px #b3ff51, inset 0 0 1px #b3ff51, inset 0 0 2px #b3ff51,
+    inset 0 0 6px #b3ff51, inset 0 0 12px #b3ff51;
+}
+
+#buttonId:hover {
+  background-color: yellowgreen;
+  color: black;
 }
